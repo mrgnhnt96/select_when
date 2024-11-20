@@ -89,9 +89,15 @@ extension SelectWhenContext on BuildContext {
     R? previousValue;
 
     return select((T value) {
-      if (!when(value)) return previousValue ??= selector(value);
+      return select((T value) {
+        if (when(value)) {
+          // Cache and return new value if condition is met
+          return previousValue = selector(value);
+        }
 
-      return previousValue = selector(value);
+        // Use cached value or compute new one if null
+        return previousValue ??= selector(value);
+      });
     });
   }
 }
