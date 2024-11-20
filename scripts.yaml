@@ -1,5 +1,5 @@
-format: "{$_packages} dart format ."
-analyze: "{$_packages} dart analyze ."
+format: dart format .
+analyze: dart analyze .
 
 prep:
   (command):
@@ -18,9 +18,8 @@ prep:
 publish:
   (bail):
   (command):
-    # - sip test --bail --recursive --concurrent
     - "{$prep}"
-    - "{$_packages} dart pub publish"
+    - dart pub publish
     - "{$publish:commit}"
     - "{$publish:tag}"
     - "{$publish:_push}"
