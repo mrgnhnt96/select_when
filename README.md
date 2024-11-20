@@ -144,7 +144,7 @@ void main() {
 
 ## Contributions
 
-Contributions are welcome! If you encounter any bugs or have feature requests, please open an issue or submit a pull request on the [GitHub repository](https://github.com/your-username/select_when_context).
+Contributions are welcome! If you encounter any bugs or have feature requests, please open an issue or submit a pull request on the [GitHub repository](https://github.com/mrgnhnt96/select_when).
 
 ## License
 
