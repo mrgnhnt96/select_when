@@ -1,0 +1,19 @@
+name: select_when
+description: "A Flutter Provider extension: `selectWhen` to control when a selector should be invoked"
+version: 1.0.0
+repository: https://github.com/mrgnhnt96/select_when
+issue_tracker: https://github.com/mrgnhnt96/select_when/issues
+funding:
+    - https://github.com/sponsors/mrgnhnt96
+topics:
+  - provider
+  - inherited-widget
+  - extensions
+
+environment:
+  sdk: ">=2.17.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ">=5.0.0 <7.0.0"
